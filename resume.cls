@@ -86,6 +86,9 @@
 % defines one's email
 % usage: \email{<email>}
 \newcommand{\email}[1]{\faEnvelope\ \href{mailto:#1}{#1}}
+% defines one's birthday
+% usage: \birthday{<date>}
+\newcommand{\birthday}[1]{\faBirthdayCake\ #1}
 % defines one's phone
 % usage: \phone{<phone>}
 \newcommand{\phone}[1]{\faPhone\ {#1}}
