@@ -1,4 +1,4 @@
-SRC = $(wildcard *.tex)
+SRC = $(wildcard resume*.tex)
 
 PDFS = $(SRC:.tex=.pdf)
 
