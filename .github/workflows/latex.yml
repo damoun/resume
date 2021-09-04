@@ -1,0 +1,21 @@
+name: Build LaTeX documents
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile french resume
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: damien-plenard.fr.tex
+      - name: Compile english resume
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: damien-plenard.en.tex
+      - uses: actions/upload-artifact@v2
+        with:
+          name: resume
+          path: damien-plenard.*.pdf
+          if-no-files-found: error
