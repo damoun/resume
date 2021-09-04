@@ -2,7 +2,7 @@ name: Build LaTeX documents
 on: [push]
 jobs:
   build_latex:
-    name: "Build :package:"
+    name: "Build 📦️"
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
