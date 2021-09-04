@@ -17,8 +17,27 @@ jobs:
         with:
           root_file: damien-plenard.en.tex
           latexmk_use_xelatex: true
-      - uses: actions/upload-artifact@v2
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
         with:
           name: resume
           path: damien-plenard.*.pdf
           if-no-files-found: error
+  deploy_pages:
+    name: "Deploy 🚀"
+    needs: build_latex
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+        with:
+          ref: "gh-pages"
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume
+      - name: Deploy to github pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2.5.0
+        with:
+          target_branch: gh-pages
