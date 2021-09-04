@@ -10,7 +10,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/github/license/damoun/resume.svg"></a>
   <a href="https://github.com/damoun/resume/actions">
-      <img src="https://github.com/damoun/resume/actions/workflows/build.yml/badge.svg">
+      <img src="https://github.com/damoun/resume/actions/workflows/latex.yml/badge.svg">
   </a>
 </p>
 
