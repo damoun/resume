@@ -10,10 +10,12 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: damien-plenard.fr.tex
+          latexmk_use_xelatex: true
       - name: Compile english resume
         uses: xu-cheng/latex-action@v2
         with:
           root_file: damien-plenard.en.tex
+          latexmk_use_xelatex: true
       - uses: actions/upload-artifact@v2
         with:
           name: resume
