@@ -1,29 +1,60 @@
-# 📄 Résumé
+<h1 align="center">
+  <br><img src="project-logo.svg" height="192">
+  <br>
+  Résumé
+  <br>
+</h1>
 
-An elegant \LaTeX\ résumé template, compiled with \XeLaTeX. Forked from
-[billryan/resume](https://github.com/billryan/resume) and inspired by :
+<h4 align="center">An elegant LaTeX résumé template.</h4>
 
-- [zachscrivena/simple-resume-cv](https://github.com/zachscrivena/simple-resume-cv)
-- [res](https://www.ctan.org/pkg/res)
-- [JianXu's CV](http://www.jianxu.net/en/files/JianXu_CV.pdf)
-- [paciorek's CV/Resume template](http://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html)
-- [How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX](https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html)
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/damoun/resume.svg"></a>
+  <a href="https://github.com/damoun/resume/actions">
+      <img src="https://github.com/damoun/resume/actions/workflows/build.yml/badge.svg">
+  </a>
+</p>
 
-## Features
+<p align="center">
+  <a href="#installing">Installing</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="CHANGELOG.md">Changelog</a>
+</p>
 
-- Easy to be further customized or extended
-- Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-- Perfect Simplified Chinese fonts support with Adobefonts
-- FontAwesome 4.6.3 support
+## Installing
 
-## Usage
+This LateX project use [xelatex][xelatex] to compile so please install it on your system or use a docker image:
 
-1. Fork
-2. Install xelatex
-2. Run make
+```sh
+docker pull moss/xelatex
+```
 
-## License
+## Getting Started
 
-[The MIT License (MIT)](/LICENSE)
+I was looking for a nice résumé template to write mine and found one by [@billryan](billryan). I forked his template and made it buildable by Github Actions to deploy it on Github Pages. I also updated the font-awesome font to version v5.15.4 base on the work of [@JanHendrikDolling](JanHendrikDolling).
+To compile LateX localy, you can use the following command:
 
-Copyrighted fonts are not subjected to this License.
+```sh
+docker run --rm -it -v `pwd`:/data moss/xelatex make
+```
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+> or if you like it simple:
+
+1. `Fork` this repository
+2. Create a `branch`
+3. `Commit` your changes
+4. `Push` your `commits` to the `branch`
+5. Submit a `pull request`
+
+> You can find more information about Pull Requests [here][pull-request-help]
+
+Check also the [list of contributors](AUTHOR.md#contributors) who helped on this project.
+
+[xelatex]: http://xetex.sourceforge.net
+[pull-request-help]: https://help.github.com/categories/collaborating-on-projects-using-pull-requests/
+[billryan]: https://github.com/billryan/resume
+[JanHendrikDolling]: https://github.com/JanHendrikDolling/latex-fontawesome5
