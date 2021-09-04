@@ -31,7 +31,7 @@ docker pull moss/xelatex
 
 ## Getting Started
 
-I was looking for a nice résumé template to write mine and found one by [@billryan](billryan). I forked his template and made it buildable by Github Actions to deploy it on Github Pages. I also updated the font-awesome font to version v5.15.4 base on the work of [@JanHendrikDolling](JanHendrikDolling).
+I was looking for a nice résumé template to write mine and found one by [@billryan][billryan]. I forked his template and made it buildable by Github Actions to deploy it on Github Pages. I also updated the font-awesome font to version v5.15.4 base on the work of [@JanHendrikDolling][JanHendrikDolling].
 To compile LateX localy, you can use the following command:
 
 ```sh

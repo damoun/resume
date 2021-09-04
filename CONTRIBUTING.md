@@ -50,7 +50,7 @@ If you are proposing a feature:
 
 Ready to contribute? Here's how to set up `resume` for local development.
 
-1. Fork the `release` repo on GitHub.
+1. Fork the `resume` repo on GitHub.
 2. Clone your fork locally:
 
 ```sh
@@ -100,5 +100,5 @@ Make sure all your changes are committed (including an entry in CHANGELOG.md).
 
 Github Actions will then deploy main branch to Github Pages if build pass.
 
-[issues]: https://github.com/damoun/release/issues
-[pull-request]: https://travis-ci.org/damoun/release/pull_requests
+[issues]: https://github.com/damoun/resume/issues
+[pull-request]: https://travis-ci.org/damoun/resume/pull_requests
