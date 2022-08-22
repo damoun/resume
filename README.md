@@ -26,7 +26,7 @@
 This LateX project use [xelatex][xelatex] to compile so please install it on your system or use a docker image:
 
 ```sh
-docker pull moss/xelatex
+docker build -t xelatex .
 ```
 
 ## Getting Started
@@ -35,7 +35,7 @@ I was looking for a nice résumé template to write mine and found one by [@bill
 To compile LateX localy, you can use the following command:
 
 ```sh
-docker run --rm -it -v `pwd`:/data moss/xelatex make
+docker run --rm -it -v `pwd`:/data xelatex
 ```
 
 ## Contributing
