@@ -1,5 +1,10 @@
 name: build
-on: [push]
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   build_latex:
     name: "Build 📦️"
@@ -31,11 +36,11 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: resume
-      - name: Deploy to github pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2.5.0
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          target_branch: gh-pages
-          build_dir: .
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: resume
+      - name: Deploy 🚀
+        if: success()
+        id: deployment
+        uses: actions/deploy-pages@main
