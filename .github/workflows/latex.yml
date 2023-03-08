@@ -38,6 +38,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: resume
+          path: resume
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
