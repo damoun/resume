@@ -36,10 +36,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     if: ${{ github.ref == 'refs/heads/main' }}
     steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v3
-        with:
-          ref: "gh-pages"
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
