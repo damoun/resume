@@ -20,8 +20,6 @@
 %\RequirePackage[usenames,dvipsnames]{xcolor}
 % loading fonts
 \RequirePackage{fontspec}
-% 2 column document
-\RequirePackage{minipage}
 % Main document font
 \setmainfont[
   Path = fonts/Main/ ,
