@@ -24,16 +24,28 @@ automating operations, and championing SRE culture across engineering organizati
 \section{\texorpdfstring{\textbf{\faicon{cogs}}\ Skills}{Skills}}
 
 \begin{itemize}[parsep=0.5ex]
-  \item \textbf{Cloud \& Infrastructure:} AWS, GCP, On-Premises
+  \item \textbf{Cloud \& Infrastructure:} AWS, GCP, Azure, On-Premises
   \item \textbf{Containers \& Orchestration:} Kubernetes, Nomad, Docker
-  \item \textbf{IaC \& Configuration:} Terraform, Ansible, Helm, FluxCD
+  \item \textbf{IaC \& Configuration:} Terraform, Ansible, Helm, ArgoCD, FluxCD
   \item \textbf{CI/CD:} GitLab CI, GitHub Actions, Git
   \item \textbf{Observability:} Prometheus, Grafana, DataDog, Elasticsearch
   \item \textbf{Languages:} Golang, Python, Bash
   \item \textbf{Databases \& Messaging:} Elasticsearch, RabbitMQ, Redis
+  \item \textbf{Networking:} Cilium, ClusterMesh
 \end{itemize}
 
 \section{\texorpdfstring{\textbf{\faicon{user}}\ Experience}{Experience}}
+
+\datedsubsection{\textbf{Kaiko.ai}}{Nov. 2025 -- Present}
+\role{Senior Platform Engineer}{Amsterdam}
+Build and optimize core infrastructure for AI-powered oncology platform supporting cancer care across European hospitals.
+\begin{itemize}
+  \item Spearheaded platform-wide migration from SecretStore CSI driver to ExternalSecrets Operator across 15+ Kubernetes clusters, implementing Kyverno deprecation policies and automated migration tooling
+  \item Architected cross-cluster communication infrastructure using Cilium ClusterMesh, implementing network policies, firewall rules, and service discovery for hub-spoke topology
+  \item Expanded multi-cloud footprint by establishing GCP organization structure and implementing Azure workload identity patterns for secure KeyVault integration across hybrid infrastructure
+  \item Reduced operational toil through automation of TLS certificate management, infrastructure cost monitoring via budget alerting, and standardization of deployment patterns
+  \item Enabled cross-cluster API access for ML workloads (Dagster, Ray) through kubelogin integration and RBAC automation
+\end{itemize}
 
 \datedsubsection{\textbf{Camunda}}{Apr. 2024 -- Oct. 2025}
 \role{Senior Site Reliability Engineer}{Amsterdam}
