@@ -12,14 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v4
+        uses: actions/checkout@v4
       - name: Compile english resume
         uses: xu-cheng/latex-action@v4
         with:
           root_file: damien-plenard.en.tex
           latexmk_use_xelatex: true
       - name: Upload artifact
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v4
+        uses: actions/upload-artifact@v4
         with:
           name: resume
           path: damien-plenard.*.pdf
@@ -37,15 +37,15 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v4
+        uses: actions/download-artifact@v4
         with:
           name: resume
           path: resume
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: resume
       - name: Deploy 🚀
         if: success()
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@v4
