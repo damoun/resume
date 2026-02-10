@@ -15,11 +15,13 @@
 
 \section{\texorpdfstring{\textbf{\faicon{user-circle}}\ Professional Summary}{Professional Summary}}
 
-Senior Site Reliability Engineer with 14+ years of experience architecting and
-operating mission-critical infrastructure at scale. Proven expertise in cloud
-platforms (AWS, GCP), Infrastructure as Code, container orchestration, and
-observability solutions. Strong track record of improving system reliability,
-automating operations, and championing SRE culture across engineering organizations.
+Senior Platform Engineer with 14+ years architecting resilient, multi-cloud
+infrastructure for high-scale systems. Expertise in Kubernetes orchestration
+(15+ production clusters), GitOps workflows (ArgoCD/FluxCD), and observability
+platforms (Prometheus/Grafana). Specialized in cross-cluster networking
+(Cilium ClusterMesh), infrastructure automation, and reducing operational toil.
+Currently building healthcare AI infrastructure; previously scaled fintech
+payment systems in compliance with PCI-DSS/GDPR requirements.
 
 \section{\texorpdfstring{\textbf{\faicon{cogs}}\ Skills}{Skills}}
 
@@ -32,6 +34,7 @@ automating operations, and championing SRE culture across engineering organizati
   \item \textbf{Languages:} Golang, Python, Bash
   \item \textbf{Databases \& Messaging:} Elasticsearch, RabbitMQ, Redis
   \item \textbf{Networking:} Cilium, ClusterMesh
+  \item \textbf{Security \& Compliance:} RBAC, Kyverno, PCI-DSS, GDPR
 \end{itemize}
 
 \section{\texorpdfstring{\textbf{\faicon{user}}\ Experience}{Experience}}
@@ -52,8 +55,8 @@ Build and optimize core infrastructure for AI-powered oncology platform supporti
 Drive reliability, observability, and operational excellence for a global SaaS workflow automation platform.
 \begin{itemize}
   \item Designed and deployed observability platform using Prometheus, Blackbox Exporter, and custom Kubernetes operator, enabling automated SLI tracking and customer-specific SLOs across multi-tenant infrastructure
-  \item Spearheaded GitOps adoption by migrating deployment workflows from GitHub Actions to ArgoCD, conducting risk assessments and coordinating cross-team stakeholder alignment
-  \item Expanded SaaS platform to new AWS regions, ensuring high availability and fault tolerance for multi-cloud, multi-region architecture
+  \item Spearheaded GitOps adoption by migrating deployment workflows from GitHub Actions to ArgoCD, reducing new region deployment time from 2 weeks to 3-4 days and enabling consistent, auditable infrastructure rollouts
+  \item Expanded platform to new AWS regions, enabling customer deployments across multiple geographies for data residency, compliance, and latency requirements
   \item Improved platform resilience by systematically resolving high-priority post-incident actions and reducing recurring failures
   \item Collaborated cross-functionally with development teams, providing technical guidance on reliability practices and operational excellence
 \end{itemize}
@@ -62,15 +65,11 @@ Drive reliability, observability, and operational excellence for a global SaaS w
 \role{Site Reliability Engineer II}{Amsterdam}
 Led infrastructure initiatives during Google Cloud Platform migration for payment processing platform.
 \begin{itemize}
-  \item Architected and executed disaster recovery strategy for production infrastructure
-  \item Automated server provisioning and configuration management using Ansible
-  \item Maintained high availability of Kubernetes clusters and on-premises infrastructure
-  \item Deployed applications to cloud infrastructure using Terraform and Helm charts
-  \item Standardized observability infrastructure through Terraform-managed dashboards
-  \item Established SLO framework to improve service reliability posture
-  \item Designed resilient architectures for managed RabbitMQ and Elasticsearch clusters
-  \item Ensured compliance with fintech security standards and regulatory requirements
-  \item Participated in 24/7 on-call rotation supporting production systems
+  \item Architected and executed disaster recovery strategy for production infrastructure, enabling business continuity in compliance with PCI-DSS and GDPR requirements
+  \item Established SLO framework with automated monitoring and alerting, improving service reliability posture across payment processing systems
+  \item Automated multi-cloud infrastructure provisioning using Terraform, Ansible, and Helm, standardizing deployments across Kubernetes clusters and on-premises systems
+  \item Designed resilient architectures for managed RabbitMQ and Elasticsearch clusters supporting high-volume transaction processing
+  \item Standardized observability infrastructure through Terraform-managed Grafana dashboards, improving incident response times
 \end{itemize}
 
 \datedsubsection{\textbf{Veepee}}{Jan. 2018 -- Jan. 2022}
@@ -89,19 +88,9 @@ Delivered observability platform and infrastructure automation for e-commerce op
 \role{System Engineer}{Paris \& Amsterdam}
 Built and operated carrier billing platform integrations for mobile payment services.
 \begin{itemize}
-  \item Designed API service for phone number carrier lookup aggregating multiple data sources
-  \item Developed microservice application for bulk SMS and premium messaging delivery
-  \item Implemented subscription-based billing system for mobile payment processing
-  \item Enhanced software quality through improved QA processes and CI/CD pipeline automation
-  \item Administered MongoDB and MySQL databases supporting production workloads
-\end{itemize}
-
-\datedsubsection{\textbf{Epitech}}{Sept. 2010 -- Mar. 2012}
-\role{Teaching Assistant (part-time)}{Paris}
-Supported computer science students through coursework and project evaluation.
-\begin{itemize}
-  \item Evaluated student projects and examinations across multiple programming disciplines
-  \item Delivered lectures on C programming, Shell scripting, and system fundamentals
+  \item Designed and deployed API service for phone number carrier lookup, aggregating multiple telecom data sources for real-time mobile payment validation
+  \item Implemented subscription-based billing system for mobile payment processing, automating recurring charge workflows
+  \item Enhanced software quality and deployment velocity by establishing CI/CD pipelines and automated testing frameworks
 \end{itemize}
 
 \section{\texorpdfstring{\textbf{\faicon{graduation-cap}}\ Education}{Education}}
@@ -111,12 +100,5 @@ Supported computer science students through coursework and project evaluation.
 
 \datedsubsection{\textbf{BJTU}, Beijing}{2013}
 \textit{2 Semesters} in Computer Science and Engineering
-
-\section{\texorpdfstring{\textbf{\faicon{info}}\ Additional}{Additional}}
-\begin{itemize}[parsep=0.5ex]
-  \item Maintain personal HomeLab for hands-on experimentation with emerging technologies
-  \item Built and grew Twitch streaming community to 2K+ followers
-  \item Serve as elected board member for residential community association (VvE)
-\end{itemize}
 
 \end{document}
