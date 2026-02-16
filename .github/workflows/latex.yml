@@ -18,7 +18,7 @@ jobs:
       - name: Compile resume
         run: latexmk -xelatex damien-plenard.en.tex
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: resume
           path: damien-plenard.*.pdf
